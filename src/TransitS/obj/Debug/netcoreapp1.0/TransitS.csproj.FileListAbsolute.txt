@@ -1,0 +1,9 @@
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.deps.json
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.runtimeconfig.json
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.runtimeconfig.dev.json
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.dll
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.pdb
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.csprojResolveAssemblyReference.cache
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.AssemblyInfo.cs
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.dll
+c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.pdb
