@@ -1,0 +1,26 @@
+@using Kendo.Mvc.UI
+@using TransitS.Models.AccountViewModels
+
+<h4>Список Пользователей</h4>
+
+@(Html.Kendo().Grid<RegisterViewModel>()
+    .Name("Users")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.FullName).Filterable(ftb => ftb.Cell(cell => cell.Operator("contains"))).Width(225);
+        columns.Bound(p => p.Login).Width(500).Filterable(ftb => ftb.Cell(cell => cell.Operator("contains")));
+    })
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+    .DataSource(dataSource => dataSource
+            .Ajax()
+            .Read(read => read.Action("ReadUsers", "Account"))
+            .PageSize(20)
+        ))
+
+
+@section scripts {
+    @Html.Kendo().DeferredScripts()
+}

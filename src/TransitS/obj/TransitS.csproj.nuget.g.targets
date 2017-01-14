@@ -4,6 +4,6 @@
     <NuGetPackageRoot>$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.tools\1.0.0-msbuild2-final\build\Microsoft.EntityFrameworkCore.Tools.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.tools\1.0.0-msbuild2-final\build\Microsoft.EntityFrameworkCore.Tools.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\1.0.1\build\netstandard1.0\Microsoft.Extensions.Configuration.UserSecrets.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\1.0.1\build\netstandard1.0\Microsoft.Extensions.Configuration.UserSecrets.targets')" />
   </ImportGroup>
 </Project>

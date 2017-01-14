@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using TransitS.Data;
 using TransitS.Models;
 using TransitS.Services;
+using Newtonsoft.Json.Serialization;
 
 namespace TransitS
 {
@@ -47,15 +48,19 @@ namespace TransitS
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddMvc();
+            services
+                .AddMvc()
+                .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            services.AddKendo();
 
+            services.AddTransient<StartUpSeedData>();
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, StartUpSeedData seeder)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -75,6 +80,8 @@ namespace TransitS
 
             app.UseIdentity();
 
+            app.UseKendo(env);
+
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
 
             app.UseMvc(routes =>
@@ -83,6 +90,8 @@ namespace TransitS
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            seeder.SeedAdminUser();
         }
     }
 }

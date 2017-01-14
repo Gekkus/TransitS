@@ -7,3 +7,13 @@ c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\De
 c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.AssemblyInfo.cs
 c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.dll
 c:\Users\User\documents\visual studio 2017\Projects\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.pdb
+D:\Project\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.deps.json
+D:\Project\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.runtimeconfig.json
+D:\Project\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.runtimeconfig.dev.json
+D:\Project\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.dll
+D:\Project\TransitS\src\TransitS\bin\Debug\netcoreapp1.0\TransitS.pdb
+D:\Project\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.AssemblyInfo.cs
+D:\Project\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.dll
+D:\Project\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.pdb
+D:\Project\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\UserSecretsAssemblyInfo.cs
+D:\Project\TransitS\src\TransitS\obj\Debug\netcoreapp1.0\TransitS.csprojResolveAssemblyReference.cache
